@@ -1,0 +1,51 @@
+@import "https://fonts.googleapis.com/css?family=Raleway";
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+.logotip {
+  font-family: 'Raleway', sans-serif;
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 400;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+.logotip-icon {
+  margin-bottom: -15px;
+}
+nav {
+  margin-left: 181px;
+  margin-right: 12px;
+}
+nav a {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 23px;
+}
+nav a:hover {
+  color: #c7b29a;
+}
+nav a:active {
+  color: #ddccaa;
+}
+.up {
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+body {
+  width: 1170px;
+  background-color: rgba(140, 140, 140, 0.5);
+  margin: 0 auto;
+  padding: 0;
+}
+.icon-header:hover path {
+  fill: #c7b29a;
+}
+.icon-header:active path {
+  fill: #ddccaa;
+}
+/*# sourceMappingURL=style.css.map */
