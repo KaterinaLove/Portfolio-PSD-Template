@@ -4,16 +4,19 @@
   font-weight: @weight;
 }
 
-.header-content {
+.slayder {
+  display: flex;
+  justify-content: space-between;
+    margin-top: 270px;
 }
 
 .slayder-heading {
   color: @color-font;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   align-items: center;
   text-align: center;
-  margin-top: 270px;
   margin-bottom: 30px;
 
   span {
@@ -46,8 +49,23 @@
     border-radius: 3px;
     padding: 21px 37px;
     margin-bottom: 310px;
-    &:hover {}
+    &:hover {
+      color: #998675;
+      background-color: #d1d1d1;
+    }
 
-    &:active {}
+    &:active {
+      color: #998675;
+      background-color: @color-font;
+    }
   }
+}
+
+.slayder-arrow-left {
+  margin-left: -150px;
+  margin-top: 50px;
+}
+.slayder-arrow-right {
+  margin-right: -150px;
+  margin-top: 50px;
 }
