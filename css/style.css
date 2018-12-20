@@ -1,0 +1,121 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+@import "https://fonts.googleapis.com/css?family=Raleway";
+.logotip {
+  font-family: 'Raleway', sans-serif;
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 400;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+.logotip-icon {
+  margin-bottom: -15px;
+}
+nav {
+  margin-left: 181px;
+  margin-right: 12px;
+}
+nav a {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 23px;
+}
+nav a:hover {
+  color: #c7b29a;
+}
+nav a:active {
+  color: #ddccaa;
+}
+.up {
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+body {
+  width: 1170px;
+  background: url(../img/photo-header.png) center no-repeat;
+  margin: 0 auto;
+  padding: 0;
+}
+.icon-header:hover path,
+.slayder-arrow-left:hover path,
+.slayder-arrow-right:hover path {
+  fill: #c7b29a;
+}
+.icon-header:active path,
+.slayder-arrow-left:active path,
+.slayder-arrow-right:active path {
+  fill: #ddccaa;
+}
+.slayder {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 270px;
+}
+.slayder-heading {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.slayder-heading span {
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+.slayder-heading h2 {
+  font-family: Raleway;
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.slayder-heading p {
+  width: 590px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  hyphens: -auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  margin-bottom: 50px;
+}
+.slayder-heading a {
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #998675;
+  border-radius: 3px;
+  padding: 21px 37px;
+  margin-bottom: 310px;
+}
+.slayder-heading a:hover {
+  color: #998675;
+  background-color: #d1d1d1;
+}
+.slayder-heading a:active {
+  color: #998675;
+  background-color: #ffffff;
+}
+.slayder-arrow-left {
+  margin-left: -150px;
+  margin-top: 50px;
+}
+.slayder-arrow-right {
+  margin-right: -150px;
+  margin-top: 50px;
+}
+/*# sourceMappingURL=style.css.map */
