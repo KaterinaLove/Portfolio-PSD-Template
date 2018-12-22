@@ -13,4 +13,52 @@
   transition: width 1s ease-out;
   background-position: right;
 }
+@font-face {
+  font-family: 'montserrat-regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('montserrat-regular'), url('../fonts/montserrat-regular.woff2') format('woff2'), url('../fonts/montserrat-regular.woff') format('woff'), url('../fonts/montserrat-regular.ttf') format('ttf'), url('../fonts/montserrat-regular.otf') format('otf'), url('../fonts/montserrat-regular.eot') format('eot');
+}
+@font-face {
+  font-family: 'montserrat-light';
+  font-style: normal;
+  font-weight: 300;
+  src: local('montserrat-light'), url('../fonts/montserrat-light.woff2') format('woff2'), url('../fonts/montserrat-light.woff') format('woff'), url('../fonts/montserrat-light.ttf') format('ttf'), url('../fonts/montserrat-light.otf') format('otf'), url('../fonts/montserrat-light.eot') format('eot');
+}
+@font-face {
+  font-family: 'releway-bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('releway-bold'), url('../fonts/releway-bold.woff2') format('woff2'), url('../fonts/releway-bold.woff') format('woff'), url('../fonts/releway-bold.ttf') format('ttf'), url('../fonts/releway-bold.eot') format('eot');
+}
+@font-face {
+  font-family: 'releway-extrabold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('releway-extrabold'), url('../fonts/releway-extrabold.woff2') format('woff2'), url('../fonts/releway-extrabold.woff') format('woff'), url('../fonts/releway-extrabold.ttf') format('ttf'), url('../fonts/releway-extrabold.eot') format('eot');
+}
+@font-face {
+  font-family: 'releway-medium';
+  font-style: normal;
+  font-weight: 500;
+  src: local('releway-medium'), url('../fonts/releway-medium.woff2') format('woff2'), url('../fonts/releway-medium.woff') format('woff'), url('../fonts/releway-medium.ttf') format('ttf'), url('../fonts/releway-medium.eot') format('eot');
+}
+@font-face {
+  font-family: 'releway-regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('releway-regular'), url('../fonts/releway-regular.woff2') format('woff2'), url('../fonts/releway-regular.woff') format('woff'), url('../fonts/releway-regular.ttf') format('ttf'), url('../fonts/releway-regular.eot') format('eot');
+}
+@font-face {
+  font-family: 'releway-semibold';
+  font-style: normal;
+  font-weight: 600;
+  src: local('releway-semibold'), url('../fonts/releway-semibold.woff2') format('woff2'), url('../fonts/releway-semibold.woff') format('woff'), url('../fonts/releway-semibold.ttf') format('ttf'), url('../fonts/releway-semibold.eot') format('eot');
+}
+@font-face {
+  font-family: 'roboto-regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('roboto-regular'), url('../fonts/roboto-regular.woff2') format('woff2'), url('../fonts/roboto-regular.woff') format('woff'), url('../fonts/roboto-regular.ttf') format('ttf'), url('../fonts/roboto-regular.eot') format('eot');
+}
 /*# sourceMappingURL=style.css.map */
