@@ -390,6 +390,50 @@ aside a:active {
   color: #998675;
   background-color: #ffffff;
 }
+.projects {
+  text-align: center;
+  margin-top: 80px;
+}
+.projects .projects-span {
+  width: 800px;
+  display: block;
+  font-family: 'raleway-semibold', sans-serif;
+  color: #555555;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 auto 20px auto;
+}
+.projects .projects-p {
+  width: 760px;
+  font-family: 'montserrat-light', sans-serif;
+  color: #8c8c8c;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  margin: 0 auto;
+}
+.projects .button button {
+  font-family: 'montserrat-light', sans-serif;
+  color: #8c8c8c;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ebebeb;
+  box-sizing: border-box;
+  background-color: rgba(17, 17, 17, 0);
+  outline: none;
+  margin: 35px 0 40px;
+}
+.projects .button button:hover {
+  color: #ffffff;
+  background-color: #998675;
+}
+.projects .button button:active {
+  background-color: #af9f8f;
+}
 body {
   min-width: 1583px;
 }
