@@ -1,3 +1,51 @@
+@font-face {
+  font-family: 'montserrat-regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('montserrat-regular'), url('../fonts/Montserrat/montserrat-regular.woff2') format('woff2'), url('../fonts/Montserrat/montserrat-regular.woff') format('woff'), url('../fonts/Montserrat/montserrat-regular.ttf') format('ttf'), url('../fonts/Montserrat/montserrat-regular.otf') format('otf'), url('../fonts/Montserrat/montserrat-regular.eot') format('eot');
+}
+@font-face {
+  font-family: 'montserrat-light';
+  font-style: normal;
+  font-weight: 300;
+  src: local('montserrat-light'), url('../fonts/Montserrat/montserrat-light.woff2') format('woff2'), url('../fonts/Montserrat/montserrat-light.woff') format('woff'), url('../fonts/Montserrat/montserrat-light.ttf') format('ttf'), url('../fonts/Montserrat/montserrat-light.otf') format('otf'), url('../fonts/Montserrat/montserrat-light.eot') format('eot');
+}
+@font-face {
+  font-family: 'raleway-bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('raleway-bold'), url('../fonts/Raleway/raleway-bold.woff2') format('woff2'), url('../fonts/Raleway/raleway-bold.woff') format('woff'), url('../fonts/Raleway/raleway-bold.ttf') format('ttf'), url('../fonts/Raleway/raleway-bold.eot') format('eot');
+}
+@font-face {
+  font-family: 'raleway-extrabold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('raleway-extrabold'), url('../fonts/Raleway/raleway-extrabold.woff2') format('woff2'), url('../fonts/Raleway/raleway-extrabold.woff') format('woff'), url('../fonts/Raleway/raleway-extrabold.ttf') format('ttf'), url('../fonts/Raleway/raleway-extrabold.eot') format('eot');
+}
+@font-face {
+  font-family: 'raleway-medium';
+  font-style: normal;
+  font-weight: 500;
+  src: local('raleway-medium'), url('../fonts/Raleway/raleway-medium.woff2') format('woff2'), url('../fonts/Raleway/raleway-medium.woff') format('woff'), url('../fonts/Raleway/raleway-medium.ttf') format('ttf'), url('../fonts/Raleway/raleway-medium.eot') format('eot');
+}
+@font-face {
+  font-family: 'raleway-regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('raleway-regular'), url('../fonts/Raleway/raleway-regular.woff2') format('woff2'), url('../fonts/Raleway/raleway-regular.woff') format('woff'), url('../fonts/Raleway/raleway-regular.ttf') format('ttf'), url('../fonts/Raleway/raleway-regular.eot') format('eot');
+}
+@font-face {
+  font-family: 'raleway-semibold';
+  font-style: normal;
+  font-weight: 600;
+  src: local('raleway-semibold'), url('../fonts/Raleway/raleway-semibold.woff2') format('woff2'), url('../fonts/Raleway/raleway-semibold.woff') format('woff'), url('../fonts/Raleway/raleway-semibold.ttf') format('ttf'), url('../fonts/Raleway/raleway-semibold.eot') format('eot');
+}
+@font-face {
+  font-family: 'roboto-regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('roboto-regular'), url('../fonts/Roboto/roboto-regular.woff2') format('woff2'), url('../fonts/Roboto/roboto-regular.woff') format('woff'), url('../fonts/Roboto/roboto-regular.ttf') format('ttf'), url('../fonts/Roboto/roboto-regular.eot') format('eot');
+}
 .wrapper-icon input[type="search"] {
   width: 27px;
   height: 27px;
@@ -5,60 +53,193 @@
   background-image: url('../img/icon-search.svg');
   background-size: contain;
   background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0);
   border: 1px solid rgba(0, 0, 0, 0);
-  padding: 0 30px 0 5px;
+  padding: 0 30px 0 7px;
 }
 .wrapper-icon input[type="search"]:focus {
   width: 250px;
   transition: width 1s ease-out;
   background-position: right;
-}
-@font-face {
-  font-family: 'montserrat-regular';
-  font-style: normal;
-  font-weight: 400;
-  src: local('montserrat-regular'), url('../fonts/montserrat-regular.woff2') format('woff2'), url('../fonts/montserrat-regular.woff') format('woff'), url('../fonts/montserrat-regular.ttf') format('ttf'), url('../fonts/montserrat-regular.otf') format('otf'), url('../fonts/montserrat-regular.eot') format('eot');
-}
-@font-face {
-  font-family: 'montserrat-light';
-  font-style: normal;
+  color: #fff;
+  border: 3px solid #fff;
+  border-top: none;
+  border-bottom-width: 1px;
+  border-right: none;
+  border-radius: 20px 0 0 20px;
+  font-family: 'montserrat-regular', sans-serif;
+  font-size: 14px;
   font-weight: 300;
-  src: local('montserrat-light'), url('../fonts/montserrat-light.woff2') format('woff2'), url('../fonts/montserrat-light.woff') format('woff'), url('../fonts/montserrat-light.ttf') format('ttf'), url('../fonts/montserrat-light.otf') format('otf'), url('../fonts/montserrat-light.eot') format('eot');
 }
-@font-face {
-  font-family: 'releway-bold';
-  font-style: normal;
-  font-weight: 700;
-  src: local('releway-bold'), url('../fonts/releway-bold.woff2') format('woff2'), url('../fonts/releway-bold.woff') format('woff'), url('../fonts/releway-bold.ttf') format('ttf'), url('../fonts/releway-bold.eot') format('eot');
+header {
+  min-width: 1583px;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../img/header.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  padding-bottom: 380px;
 }
-@font-face {
-  font-family: 'releway-extrabold';
-  font-style: normal;
-  font-weight: 700;
-  src: local('releway-extrabold'), url('../fonts/releway-extrabold.woff2') format('woff2'), url('../fonts/releway-extrabold.woff') format('woff'), url('../fonts/releway-extrabold.ttf') format('ttf'), url('../fonts/releway-extrabold.eot') format('eot');
+.wrapper {
+  display: flex;
+  justify-content: center;
 }
-@font-face {
-  font-family: 'releway-medium';
-  font-style: normal;
+.wrapper .logo {
+  display: flex;
+  align-items: center;
+  font-family: 'raleway-regular', sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 200px 0 0;
+}
+.wrapper nav {
+  display: flex;
+  align-items: center;
+}
+.wrapper nav a {
+  font-family: 'montserrat-regular', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0 14px;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.wrapper nav a:hover {
+  color: #c7b29a;
+}
+.wrapper nav a:active {
+  color: #a48d72;
+}
+.wrapper .wrapper-icon {
+  display: flex;
+  align-items: center;
+}
+.wrapper .cart {
+  margin: 0 25px 0 40px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+  text-align: center;
+  margin: 280px 0 0 0;
+}
+.header .h2 {
+  width: 600px;
+  font-family: 'raleway-medium', sans-serif;
+  font-size: 36px;
   font-weight: 500;
-  src: local('releway-medium'), url('../fonts/releway-medium.woff2') format('woff2'), url('../fonts/releway-medium.woff') format('woff'), url('../fonts/releway-medium.ttf') format('ttf'), url('../fonts/releway-medium.eot') format('eot');
+  margin: 10px;
 }
-@font-face {
-  font-family: 'releway-regular';
-  font-style: normal;
-  font-weight: 400;
-  src: local('releway-regular'), url('../fonts/releway-regular.woff2') format('woff2'), url('../fonts/releway-regular.woff') format('woff'), url('../fonts/releway-regular.ttf') format('ttf'), url('../fonts/releway-regular.eot') format('eot');
+.header .h1 {
+  width: 610px;
+  font-family: 'raleway-extrabold', sans-serif;
+  font-size: 52px;
+  font-weight: 700;
 }
-@font-face {
-  font-family: 'releway-semibold';
-  font-style: normal;
-  font-weight: 600;
-  src: local('releway-semibold'), url('../fonts/releway-semibold.woff2') format('woff2'), url('../fonts/releway-semibold.woff') format('woff'), url('../fonts/releway-semibold.ttf') format('ttf'), url('../fonts/releway-semibold.eot') format('eot');
+.header p {
+  width: 580px;
+  font-family: 'montserrat-light', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
 }
-@font-face {
-  font-family: 'roboto-regular';
-  font-style: normal;
-  font-weight: 400;
-  src: local('roboto-regular'), url('../fonts/roboto-regular.woff2') format('woff2'), url('../fonts/roboto-regular.woff') format('woff'), url('../fonts/roboto-regular.ttf') format('ttf'), url('../fonts/roboto-regular.eot') format('eot');
+.header a {
+  font-family: 'raleway-extrabold', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #998675;
+  border-radius: 3px;
+  padding: 21px 37px;
+  margin-top: 40px;
+}
+.header a:hover {
+  color: #998675;
+  background-color: #d1d1d1;
+}
+.header a:active {
+  color: #998675;
+  background-color: #ffffff;
+}
+.control .control-left {
+  position: absolute;
+  top: 46.4%;
+  left: 7.8%;
+}
+.control .control-left:after {
+  content: "";
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  border-bottom: 2px solid #a4a3a1;
+  border-left: 2px solid #a4a3a1;
+  transform: rotate(45deg);
+}
+.control .control-left:hover:after {
+  border-bottom: 2px solid #d3c1ad;
+  border-left: 2px solid #d3c1ad;
+}
+.control .control-radio {
+  position: absolute;
+  top: 95%;
+}
+.control .control-radio:after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #a4a3a1;
+  background-clip: padding-box;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+}
+.control .control-radio:focus:after {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #a4a3a1;
+  border-radius: 50%;
+}
+.control .control-radio:nth-child(2) {
+  left: 46%;
+}
+.control .control-radio:nth-child(3) {
+  left: 48%;
+}
+.control .control-radio:nth-child(4) {
+  left: 50%;
+}
+.control .control-radio:nth-child(5) {
+  left: 52%;
+}
+.control .control-radio:nth-child(6) {
+  left: 54%;
+}
+.control .control-right {
+  position: absolute;
+  top: 46.4%;
+  left: 90.1%;
+}
+.control .control-right:after {
+  content: "";
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  border-top: 2px solid #a4a3a1;
+  border-right: 2px solid #a4a3a1;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 10px;
+  left: -25px;
+}
+.control .control-right:hover:after {
+  border-top: 2px solid #d3c1ad;
+  border-right: 2px solid #d3c1ad;
 }
 /*# sourceMappingURL=style.css.map */
