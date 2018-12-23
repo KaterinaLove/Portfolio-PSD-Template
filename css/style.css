@@ -72,7 +72,6 @@
   font-weight: 300;
 }
 header {
-  min-width: 1583px;
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../img/header.jpg');
   background-position: center;
@@ -243,7 +242,6 @@ header {
   border-right: 2px solid #d3c1ad;
 }
 .features {
-  min-width: 1583px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -293,5 +291,57 @@ header {
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
+}
+.layouts {
+  text-align: center;
+  position: relative;
+  background-color: #fbfaf8;
+  padding: 80px 0 530px;
+}
+.layouts span {
+  width: 850px;
+  display: block;
+  font-family: 'raleway-semibold', sans-serif;
+  color: #555555;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px auto;
+}
+.layouts p {
+  width: 785px;
+  font-family: 'montserrat-light', sans-serif;
+  color: #8c8c8c;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  margin: 0 auto;
+}
+.layouts img {
+  position: absolute;
+  bottom: 0;
+}
+.layouts .browser-left {
+  left: 48%;
+  margin-left: -615px;
+  z-index: 1;
+}
+.layouts .browser-left:hover {
+  z-index: 3;
+}
+.layouts .browser-center {
+  left: 50%;
+  margin-left: -385px;
+  z-index: 2;
+}
+.layouts .browser-right {
+  left: 52%;
+  margin-left: -155px;
+  z-index: 1;
+}
+.layouts .browser-right:hover {
+  z-index: 3;
+}
+body {
+  min-width: 1583px;
 }
 /*# sourceMappingURL=style.css.map */
