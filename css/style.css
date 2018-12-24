@@ -434,6 +434,69 @@ aside a:active {
 .projects .button button:active {
   background-color: #af9f8f;
 }
+.projects .article {
+  max-width: 1583px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.projects article {
+  width: 370px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.projects .excerpt {
+  text-align: left;
+  background-color: #fbfaf8;
+  padding: 25px;
+  position: relative;
+}
+.projects .excerpt:before {
+  content: "";
+  display: block;
+  border: 30px solid transparent;
+  border-bottom: 10px solid #fbfaf8;
+  position: absolute;
+  top: -40px;
+  left: 19px;
+}
+.projects .excerpt-h {
+  font-family: 'raleway-medium', sans-serif;
+  color: #c7b29a;
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+}
+.projects .excerpt-p {
+  font-family: 'montserrat-light', sans-serif;
+  color: #d1d1d1;
+  font-size: 14px;
+  font-weight: 300;
+  display: block;
+}
+.projects .button-footer {
+  font-family: 'raleway-extrabold', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #998675;
+  border-radius: 3px;
+  padding: 19px 44px;
+  margin-top: 40px;
+  outline: none;
+  border: none;
+}
+.projects .button-footer:hover {
+  color: #998675;
+  background-color: #d1d1d1;
+}
+.projects .button-footer:active {
+  background-color: #ffffff;
+}
 body {
   min-width: 1583px;
 }
