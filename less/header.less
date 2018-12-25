@@ -2,9 +2,11 @@
   text-decoration: none;
   color: @color;
   text-transform: @transform;
+
   &:hover {
     color: #c7b29a;
   }
+
   &:active {
     color: #a48d72;
   }
@@ -40,7 +42,18 @@ header {
     font-weight: 400;
     text-decoration: none;
     color: @color;
+    fill: @color;
     margin: 0 200px 0 0;
+
+    &:hover {
+      color: #c7b29a;
+      fill: #c7b29a;
+    }
+
+    &:active {
+      color: #a48d72;
+      fill: #a48d72;
+    }
   }
 
   nav {
@@ -56,11 +69,21 @@ header {
   }
 
   .wrapper-icon {
+    position: relative;
     .display();
-  }
+    margin-left: 60px;
 
-  .cart {
-    margin: 0 25px 0 40px;
+    .cart {
+      fill: @color;
+
+      &:hover path {
+        fill: #c7b29a;
+      }
+
+      &:active path {
+        fill: #a48d72;
+      }
+    }
   }
 }
 
@@ -105,10 +128,12 @@ header {
     border-radius: 3px;
     padding: 21px 37px;
     margin-top: 40px;
+
     &:hover {
       color: #998675;
       background-color: #d1d1d1;
     }
+
     &:active {
       color: #998675;
       background-color: @color;
@@ -121,6 +146,7 @@ header {
     position: absolute;
     top: 46.4%;
     left: 7.8%;
+
     &:after {
       content: "";
       display: inline-block;
@@ -130,6 +156,7 @@ header {
       border-left: 2px solid #a4a3a1;
       transform: rotate(45deg);
     }
+
     &:hover:after {
       border-bottom: 2px solid #d3c1ad;
       ;
@@ -141,6 +168,7 @@ header {
   .control-radio {
     position: absolute;
     top: 95%;
+
     &:after {
       content: "";
       display: inline-block;
@@ -151,32 +179,39 @@ header {
       border: 2px solid rgba(0, 0, 0, 0);
       border-radius: 50%;
     }
-    &:focus:after {
+
+    &:hover:after {
       background-color: rgba(0, 0, 0, 0);
       border: 2px solid #a4a3a1;
       border-radius: 50%;
     }
+
     &:nth-child(2) {
       left: 46%;
     }
+
     &:nth-child(3) {
       left: 48%;
     }
+
     &:nth-child(4) {
       left: 50%;
     }
+
     &:nth-child(5) {
       left: 52%;
     }
+
     &:nth-child(6) {
       left: 54%;
     }
   }
-  
+
   .control-right {
     position: absolute;
     top: 46.4%;
     left: 90.1%;
+
     &:after {
       content: "";
       display: inline-block;
@@ -189,6 +224,7 @@ header {
       top: 10px;
       left: -25px;
     }
+
     &:hover:after {
       border-top: 2px solid #d3c1ad;
       ;

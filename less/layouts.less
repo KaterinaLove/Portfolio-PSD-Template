@@ -1,50 +1,58 @@
 .layouts {
   text-align: center;
+  background-color: #fbfaf8;
   position: relative;
-  background-color:  #fbfaf8;
-  padding: 80px 0 530px;
+  padding-top: 80px;
+
   span {
     width: 850px;
     display: block;
     font-family: 'raleway-semibold', sans-serif;
-    color:  #555555;
+    color: #555555;
     font-size: 30px;
     font-weight: 600;
     margin: 20px auto;
   }
+
   p {
     width: 785px;
     font-family: 'montserrat-light', sans-serif;
-    color:  #8c8c8c;
+    color: #8c8c8c;
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
+    margin: 0 auto 40px auto;
+  }
+
+  .browser-left {
+    position: absolute;
+    left: 48%;
+    bottom: 0;
+    margin-left: -615px;
+    z-index: 1;
+
+    &:hover {
+      z-index: 3;
+    }
+  }
+
+  .browser-center {
+    position: relative;
+    z-index: 2;
+    display: flex;
     margin: 0 auto;
   }
-  img {
-    position: absolute;
-    bottom: 0;
-    }
-  .browser-left {
-    left: 48%;
-    margin-left:-615px;
-    z-index: 1;
-    &:hover {
-      z-index: 3;
-    }
-  }
-  .browser-center {
-    left: 50%;
-    margin-left:-385px;
-    z-index: 2;
-  }
+
   .browser-right {
+    position: absolute;
     left: 52%;
-    margin-left:-155px;
+    bottom: 0;
+    margin-left: -155px;
     z-index: 1;
+
     &:hover {
       z-index: 3;
     }
   }
-  
+
 }

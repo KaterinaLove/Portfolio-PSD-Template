@@ -31,15 +31,17 @@
     border-radius: 3px;
     border-style: solid;
     border-width: 1px;
-    border-color:  #ebebeb;
+    border-color: #ebebeb;
     box-sizing: border-box;
-    background-color:  rgba(17, 17, 17, 0);
+    background-color: rgba(17, 17, 17, 0);
     outline: none;
     margin: 35px 0 40px;
+
     &:hover {
       color: @color;
       background-color: #998675;
     }
+
     &:active {
       background-color: #af9f8f;
     }
@@ -52,16 +54,19 @@
     flex-wrap: wrap;
     margin: 0 auto;
     position: relative;
+
     .icon {
       position: absolute;
       top: 92px;
       left: 130px;
       z-index: -1;
       fill: @color;
-      
+
     }
+
     svg {
       padding: 14px;
+
       &:hover {
         fill: #c7b299;
       }
@@ -74,6 +79,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
+
     &:hover:before {
       content: " ";
       background-color: rgba(0, 0, 0, .65);
@@ -81,48 +87,56 @@
       width: 100%;
       height: 100%;
     }
+
     &:hover .excerpt {
-      background-color:  #362f2d;
+      background-color: #362f2d;
     }
+
     &:hover .excerpt:before {
-      border: 30px solid transparent;	
+      border: 30px solid transparent;
       border-bottom: 10px solid #362f2d;
     }
+
     &:hover .icon {
       z-index: 1;
     }
   }
-  img {
-  }
+
+  img {}
+
   .excerpt {
     text-align: left;
-    background-color:  #fbfaf8;
+    background-color: #fbfaf8;
     padding: 25px;
     position: relative;
+
     &:before {
       content: "";
       display: block;
-      border: 30px solid transparent;	
+      border: 30px solid transparent;
       border-bottom: 10px solid #fbfaf8;
       position: absolute;
       top: -40px;
       left: 19px;
     }
   }
+
   .excerpt-h {
     font-family: 'raleway-medium', sans-serif;
-    color:  #c7b29a;
+    color: #c7b29a;
     font-size: 20px;
     font-weight: 500;
     display: block;
   }
+
   .excerpt-p {
     font-family: 'montserrat-light', sans-serif;
-    color:  #d1d1d1;
+    color: #d1d1d1;
     font-size: 14px;
     font-weight: 300;
     display: block;
   }
+
   .button-footer {
     font-family: 'raleway-extrabold', sans-serif;
     font-size: 14px;
@@ -136,10 +150,12 @@
     margin-top: 40px;
     outline: none;
     border: none;
+
     &:hover {
       color: #998675;
       background-color: #d1d1d1;
     }
+
     &:active {
       background-color: @color;
     }

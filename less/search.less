@@ -1,3 +1,25 @@
+@keyframes left {
+  from {
+    left: 45px;
+    width: 27px;
+  }
+
+  to {
+    left: -140px;
+    width: 270px;
+  }
+}
+
+@keyframes top {
+  from {
+    top: 13px;
+  }
+
+  to {
+    top: 60px;
+  }
+}
+
 .wrapper-icon input[type="search"] {
   width: 27px;
   height: 27px;
@@ -7,12 +29,19 @@
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 13px;
+  left: 45px;
   padding: 0 30px 0 7px;
+
+  &:hover {
+    background-image: url('../img/icon-search-hover.svg');
+  }
 }
 
 .wrapper-icon input[type="search"]:focus {
-  width: 250px;
-  transition: width 1s ease-out;
+  animation: left 1s ease-in-out forwards,
+    top 0.6s ease-in-out forwards;
   background-position: right;
   color: @color;
   border: 3px solid @color;
