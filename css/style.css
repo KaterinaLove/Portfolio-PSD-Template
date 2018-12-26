@@ -386,7 +386,7 @@ header {
 .layouts .browser-right:hover {
   z-index: 3;
 }
-aside {
+.aside {
   display: flex;
   justify-content: center;
   background: -webkit-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
@@ -395,27 +395,27 @@ aside {
   background: -ms-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
   background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
 }
-aside div {
+.aside .aside-wrup {
   margin: 45px 470px 45px 0;
 }
-aside h2 {
+.aside h2 {
   font-family: 'raleway-regular', sans-serif;
   color: #ffffff;
   font-size: 28px;
   font-weight: 400;
   margin: 0;
 }
-aside span {
+.aside span {
   color: #c7b299;
 }
-aside p {
+.aside p {
   font-family: 'montserrat-light', sans-serif;
   color: #615855;
   font-size: 18px;
   font-weight: 300;
   margin: 0;
 }
-aside a {
+.aside .aside-link {
   font-family: 'raleway-extrabold', sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -427,11 +427,11 @@ aside a {
   padding: 15px 25px;
   margin: auto 0;
 }
-aside a:hover {
+.aside .aside-link:hover {
   color: #998675;
   background-color: #d1d1d1;
 }
-aside a:active {
+.aside .aside-link:active {
   color: #998675;
   background-color: #ffffff;
 }
@@ -447,15 +447,6 @@ aside a:active {
   font-size: 30px;
   font-weight: 600;
   margin: 0 auto 20px auto;
-}
-.projects .projects-p {
-  width: 760px;
-  font-family: 'montserrat-light', sans-serif;
-  color: #8c8c8c;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 28px;
-  margin: 0 auto;
 }
 .projects .button {
   font-family: 'montserrat-light', sans-serif;
@@ -573,6 +564,15 @@ aside a:active {
 }
 .projects .button-footer:active {
   background-color: #ffffff;
+}
+.text {
+  width: 760px;
+  font-family: 'montserrat-light', sans-serif;
+  color: #8c8c8c;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  margin: 0 auto;
 }
 body {
   min-width: 1583px;
