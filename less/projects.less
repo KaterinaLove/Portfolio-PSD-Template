@@ -51,19 +51,18 @@
     flex-wrap: wrap;
     margin: 0 auto;
     position: relative;
-
+    
     .icon {
       position: absolute;
-      top: 92px;
+      top: -20px;
       left: 130px;
       z-index: -1;
       fill: @color;
-
+      transition: top 0.7s ease-in-out;
     }
 
     svg {
       padding: 14px;
-
       &:hover {
         fill: #c7b299;
       }
@@ -95,6 +94,7 @@
     }
 
     &:hover .icon {
+      top: 92px;
       z-index: 1;
     }
     
