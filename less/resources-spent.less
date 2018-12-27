@@ -1,0 +1,42 @@
+.resources-spent {
+  .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 70px;
+    
+    &:after {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 2px;
+      background-color: @color;
+      transition: width 1s ease-out;
+    }
+    &:hover svg{
+      transform: rotate(360deg);
+    }
+    &:hover:after {
+      width: 80px;
+    }
+  }
+  svg {
+    transition: transform 1s ease-out;
+    fill: #c7b299;
+  }
+  .inner-namber {
+    font-family: 'montserrat-light', sans-serif;
+    color:  @color;
+    font-size: 48px;
+    font-weight: 200;
+    margin: 25px 0 15px 0;
+  }
+  .inner-desc {
+    font-family: 'montserrat-light', sans-serif;
+    color:  #c7b299;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+}
