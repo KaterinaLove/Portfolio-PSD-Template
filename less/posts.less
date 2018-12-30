@@ -1,6 +1,9 @@
 .posts {
-  margin: 80px auto;
+  margin: 0 auto;
+  padding: 80px 0;
+  background-color: @color;
 }
+
 .posts-title {
   width: 757px;
   margin: 0 auto;
@@ -15,10 +18,58 @@
   justify-content: center;
   .post-inner {
     width: 370px;
+    margin: 15px;
+    position: relative;
+    padding-bottom: 30px;
+    &:hover time{
+      background-color:  #c7b299;
+    }
+    &:hover .time{
+      background-color:  #a48d72;
+    }
+    &:hover .post-inner-h{
+      color:  #c7b299;
+    }
+    &:hover p{
+      color: @color;
+    }
+    &:hover img{
+      opacity: 0.5;
+    }
+    &:hover {
+      background-color: #362f2d;
+    }
   }
   img {
-  }
+    background-color: #000;
+    }
+  
   time {
+    width: 40px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-family: 'montserrat-light', sans-serif;
+    color: @color;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+    background-color:  #363636;
+
+    .time {
+      width: 100%;
+      font-family: 'roboto-regular', sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 20px;
+      display: block;
+      background-color:  #252525;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
   }
   .post-inner-h {
     color: #555555;
@@ -38,19 +89,36 @@
     font-size: 14px;
     font-weight: 300;
     line-height: 20px;
+    text-decoration: none;
     margin: 0 20px 25px 25px;
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      border: 5px solid transparent;
+      border-left: 8px solid #c7b299;
+      position: absolute;
+      top: 5px;
+      left: 83px;
+    }
     &:hover{
+      color: #d1d1d1;
+      &:after {
+        border-left: 8px solid #d1d1d1;
+      }
     }
   }
-  svg {
-  }
-  path {
+}
+
+.posts-batton {
+  width: 50px;
+  margin: 0 auto;
+  margin-top: 30px;
+  .posts-batton-svg {
+    fill: #d1d1d1;
+    &:hover {
+      fill: #c7b299;
+    }
   }
 }
-batton {
-  svg {
-  }
-  path {
-    
-  }
-}
+
