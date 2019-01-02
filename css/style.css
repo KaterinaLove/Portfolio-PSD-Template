@@ -1011,7 +1011,144 @@ footer .pseudo {
   border: 1px solid transparent;
   border-right: 1px solid #545454;
 }
-body {
-  min-width: 1583px;
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+@media all and (min-width: 1583px) {
+  body {
+    min-width: 1583px;
+  }
+}
+@media all and (max-width: 1439px) {
+  body {
+    width: 100%;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .wrapper .logo {
+    margin-right: 20px;
+  }
+  .wrapper-icon input[type="search"]:focus {
+    left: -250px;
+    width: 250px;
+  }
+  .layouts .browser-right {
+    margin-left: -250px;
+  }
+  .layouts .browser-left {
+    margin-left: -530px;
+  }
+  .mobile {
+    padding: 150px 0;
+  }
+  .mobile .mobile-span {
+    margin-left: 600px;
+    width: 500px;
+  }
+  .mobile p {
+    width: 500px;
+    margin-left: 600px;
+  }
+  .mobile ul {
+    margin-left: 600px;
+    width: 500px;
+  }
+}
+@media all and (max-width: 1070px) {
+  .wrapper {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .wrapper logo {
+    order: 1;
+  }
+  .wrapper nav {
+    order: 3;
+    margin-top: 30px;
+  }
+  .wrapper .wrapper-icon {
+    order: 2;
+    margin-left: 30%;
+  }
+  .wrapper-icon input[type="search"]:focus {
+    left: -227px;
+    top: 48px;
+  }
+  .browser-center,
+  .layouts .browser-left,
+  .layouts .browser-right {
+    width: 50%;
+    height: 50%;
+  }
+  .layouts .browser-left,
+  .layouts .browser-right {
+    left: 50%;
+  }
+  .layouts .browser-left {
+    margin-left: -40%;
+  }
+  .layouts .browser-right {
+    margin-left: -8%;
+  }
+  .video {
+    height: auto;
+  }
+  .mobile {
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../img/iphone-in-hand.png);
+    background-color: #fbfaf8;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+  }
+  .mobile .mobile-span,
+  .mobile ul {
+    margin: 0 auto;
+  }
+  .mobile p {
+    margin: 25px auto;
+  }
+  .resources-spent {
+    flex-wrap: wrap;
+  }
+  .resources-spent .inner {
+    padding: 30px 40px;
+  }
+  .post-inner:last-child {
+    visibility: hidden;
+    display: none;
+  }
+  .third-party {
+    flex-wrap: wrap;
+  }
+  .third-party a {
+    padding: 30px;
+  }
+  .aside {
+    display: flex;
+    justify-content: space-between;
+  }
+  .aside .aside-wrup {
+    margin: 40px 10px;
+  }
+}
+@media all and (max-width: 800px) {
+  .layouts span,
+  .layouts p,
+  .text,
+  .posts-title,
+  .projects .projects-span {
+    width: 100%;
+  }
+  .post-inner:nth-last-child(2) {
+    visibility: hidden;
+    display: none;
+  }
+  .footer {
+    padding: 50px 0;
+  }
+  .footer article,
+  .footer div {
+    margin: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
