@@ -1,4 +1,270 @@
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
+@media all and (min-width: 1583px) {
+  body {
+    min-width: 1583px;
+  }
+}
+@media all and (max-width: 1439px) {
+  body {
+    width: 100%;
+  }
+  .wrapper {
+    width: 100%;
+    .logo {
+      margin-right: 20px;
+    }
+  }
+  .wrapper-icon input[type="search"]:focus {
+    left: -250px;
+    width: 250px;
+  }
+  .layouts .browser-right {
+    margin-left: -250px;
+  }
+  .layouts .browser-left {
+    margin-left: -530px;
+  }
+  .mobile {
+    padding: 150px 0;
+    .mobile-span {
+      margin-left: 600px;
+      width: 500px;
+    }
+    p {
+      width: 500px;
+      margin-left: 600px;
+    }
+    ul {
+      margin-left: 600px;
+      width: 500px;
+    }
+  }
+}
+@media all and (max-width: 1070px) {
+  .wrapper {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    logo {
+      order: 1;
+    }
+    nav {
+      order: 3;
+      margin-top: 30px;
+    }
+    .wrapper-icon {
+      order: 2;
+      margin-left: 30%;
+    }
+  }
+  .wrapper-icon input[type="search"]:focus {
+    left: -227px;
+    top: 48px;
+  }
+  .layouts .browser-center,
+  .layouts .browser-left,
+  .layouts .browser-right {
+    width: 50%;
+    height: 50%;
+  }
+  .layouts .browser-left,
+  .layouts .browser-right {
+    left: 50%;
+    height: 25%;
+  }
+  .layouts .browser-left {
+    margin-left: -40%;
+  }
+  .layouts .browser-right {
+    margin-left: -8%;
+  }
+  .video {
+    height: auto;
+  }
+  .mobile {
+    background: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(../img/iphone-in-hand.png);
+    background-color: #fbfaf8;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    .mobile-span,
+    ul {
+      margin: 0 auto;
+    }
+    p {
+      margin: 25px auto;
+    }
+  }
+  .resources-spent {
+    flex-wrap: wrap;
+    .inner {
+    padding: 30px 40px;
+    }
+  }
+  .post-inner:last-child {
+    visibility: hidden;
+    display: none;
+  }
+  .third-party {
+    flex-wrap: wrap;
+    a {
+      padding: 30px;
+    }
+  }
+  .aside {
+    display: flex;
+    justify-content: space-between;
+  }
+  .aside .aside-wrup {
+    margin: 40px 10px;
+  }
+}//150%
+@media all and (max-width: 800px) {
+  .layouts span,
+  .layouts p,
+  .text,
+  .posts-title,
+  .projects .projects-span {
+    width: 100%;
+  }
+  .post-inner:nth-last-child(2) {
+    visibility: hidden;
+    display: none;
+  }
+  .footer {
+    padding: 50px 0;
+    article,
+    div {
+      margin: 10px
+    }
+  }
+}//200%
+@media all and (max-width: 680px) {
+  .wrapper{
+    justify-content: center;
+    align-items:flex-start;
+    nav {
+    order: -1;
+    }
+    .wrapper-icon {
+      margin-left: 20%;
+      order: 3;
+    }
+  }
   
+  .wrapper-icon {
+    .cart {
+      padding: 10px;
+    }
+    input[type="search"] {
+      left: -60px;
+      top: 15px;
+    }
+  }
+  
+  label {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image:  url('../img/icon-menu.svg');
+    background-size: 100%;
+    margin-top: -20px;
+  }
+  .menu {
+    visibility: hidden;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+  }
+  .menu li {
+    height: 40px;
+    text-align: center;
+  }
+  header {
+    padding-bottom: 80px;
+  }
+  .header {
+    margin-top: 80px;
+    .h2 {
+      width: 80%;
+    }
+    .h1 {
+      width: 80%;
+    }
+    p {
+      width: 80%;
+    }
+  }
+  .control .control-left {
+    top: 63%
+  }
+  .control .control-right {
+    top: 62%;
+  }
+  .control .control-radio {
+    &:nth-child(2) {
+        left: 37%;
+      }
+
+      &:nth-child(3) {
+        left: 42%;
+      }
+
+      &:nth-child(4) {
+        left: 47%;
+      }
+
+      &:nth-child(5) {
+        left: 52%;
+      }
+
+      &:nth-child(6) {
+        left: 57%;
+      }
+    }
+  .wrapper-icon input[type="search"]:focus {
+    left: -300px;
+    top: 90px;
+  }
+  
+  .hidden {
+    top: 20px;
+    width: 90%;
+  }
+  
+  .footer {
+    flex-wrap: wrap;
+  }
+  
+}
+@media all and (max-width: 550px) {
+  .mobile {
+    .mobile-span {
+      width: 100%;
+    }
+    p {
+      width: 100%;
+    }
+    ul {
+      width: 80%;
+      margin-left: -10px;
+    }
+  }
+  .hidden {
+    margin-left: -250px;
+  }
+}
+@media all and (max-width: 420px) {
+  .wrapper .logo {
+    margin-right: -1px;
+  }
+  .projects .button{
+    margin: 10px 0;
+  }
+  .hidden {
+    margin-left: -180px;
+  }
+}
+
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px){
+
 }
