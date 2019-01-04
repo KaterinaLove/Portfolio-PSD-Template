@@ -23,6 +23,9 @@
   .layouts .browser-left {
     margin-left: -530px;
   }
+  .video {
+    height: auto;
+  }
   .mobile {
     padding: 150px 0;
     .mobile-span {
@@ -39,7 +42,7 @@
     }
   }
 }
-@media all and (max-width: 1070px) {
+@media all and (max-width: 1195px) {
   .wrapper {
     flex-wrap: wrap;
     justify-content: space-around;
@@ -55,9 +58,13 @@
       margin-left: 30%;
     }
   }
+  
+  .wrapper-icon input[type="search"] {
+    left: -75px;
+  }
   .wrapper-icon input[type="search"]:focus {
-    left: -227px;
-    top: 48px;
+    left: -305px;
+    top: 16px;
   }
   .layouts .browser-center,
   .layouts .browser-left,
@@ -65,31 +72,26 @@
     width: 50%;
     height: 50%;
   }
-  .layouts .browser-left,
-  .layouts .browser-right {
-    left: 50%;
-    height: 25%;
-  }
   .layouts .browser-left {
     margin-left: -40%;
   }
   .layouts .browser-right {
     margin-left: -8%;
   }
-  .video {
-    height: auto;
-  }
   .mobile {
     background: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(../img/iphone-in-hand.png);
     background-color: #fbfaf8;
     background-repeat: no-repeat;
     background-position-y: 100%;
+    padding-left: 200px;
     .mobile-span,
     ul {
       margin: 0 auto;
+      padding: 0 10px;
     }
     p {
       margin: 25px auto;
+      padding: 0 10px;
     }
   }
   .resources-spent {
@@ -110,24 +112,13 @@
   }
   .aside {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 20px;
+    .aside-wrup {
+      margin: 0 25px 20px 25px;
+    }
   }
-  .aside .aside-wrup {
-    margin: 40px 10px;
-  }
-}//150%
-@media all and (max-width: 800px) {
-  .layouts span,
-  .layouts p,
-  .text,
-  .posts-title,
-  .projects .projects-span {
-    width: 100%;
-  }
-  .post-inner:nth-last-child(2) {
-    visibility: hidden;
-    display: none;
-  }
+  
   .footer {
     padding: 50px 0;
     article,
@@ -135,8 +126,100 @@
       margin: 10px
     }
   }
-}//200%
-@media all and (max-width: 680px) {
+}
+@media all and (max-width: 1025px) {
+  .layouts span,
+  .layouts p,
+  .text,
+  .posts-title,
+  .projects .projects-span {
+    width: 95%;
+  }
+  
+  .layouts .browser-left,
+  .layouts .browser-right {
+    left: 50%;
+    height: 45%;
+  }
+  
+  .mobile {
+    padding-left: 300px;
+  }
+  
+  .footer {
+    flex-wrap: wrap;
+    .widget {
+      height: 290px;
+    }
+  }
+  footer {
+    flex-wrap: wrap;
+    padding: 20px;
+    div {
+      margin: 10px;
+    }
+  }
+}
+@media all and (max-width: 817px) {
+  header {
+    padding-bottom: 250px;
+  }
+    .control .control-left {
+    top: 63%
+  }
+  .control .control-right {
+    top: 62%;
+  }
+  .control .control-radio {
+    &:nth-child(2) {
+        left: 37%;
+      }
+
+      &:nth-child(3) {
+        left: 42%;
+      }
+
+      &:nth-child(4) {
+        left: 47%;
+      }
+
+      &:nth-child(5) {
+        left: 52%;
+      }
+
+      &:nth-child(6) {
+        left: 57%;
+      }
+    }
+  .layouts .browser-left,
+  .layouts .browser-right {
+    height: 40%;
+  }
+  
+  .mobile {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/iphone-in-hand.png);
+    background-color: #fbfaf8;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    padding: 150px 10px;
+    .mobile-span{
+      color: #555555;
+    }
+    p {
+      color: #666666;
+    }
+    li {
+      color: #666666;
+    }
+ }
+  .post-inner:nth-last-child(2) {
+    visibility: hidden;
+    display: none;
+  }
+  
+}
+@media all and (max-width: 675px) {
+  
   .wrapper{
     justify-content: center;
     align-items:flex-start;
@@ -167,6 +250,7 @@
     background-size: 100%;
     margin-top: -20px;
   }
+  
   .menu {
     visibility: hidden;
     margin: 0 auto;
@@ -175,14 +259,16 @@
     flex-direction: column;
   }
   .menu li {
-    height: 40px;
-    text-align: center;
+    height: 35px;
+    background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.0));
+    
   }
+  
   header {
     padding-bottom: 80px;
   }
   .header {
-    margin-top: 80px;
+    margin-top: 25px;
     .h2 {
       width: 80%;
     }
@@ -193,76 +279,149 @@
       width: 80%;
     }
   }
-  .control .control-left {
-    top: 63%
+
+  .wrapper-icon input[type="search"]:focus {
+    left: -300px;
+    top: 90px;
   }
-  .control .control-right {
-    top: 62%;
-  }
+  
   .control .control-radio {
     &:nth-child(2) {
         left: 37%;
       }
 
       &:nth-child(3) {
-        left: 42%;
+        left: 43%;
       }
 
       &:nth-child(4) {
-        left: 47%;
+        left: 49%;
       }
 
       &:nth-child(5) {
-        left: 52%;
+        left: 55%;
       }
 
       &:nth-child(6) {
-        left: 57%;
+        left: 61%;
       }
     }
-  .wrapper-icon input[type="search"]:focus {
-    left: -300px;
-    top: 90px;
-  }
   
-  .hidden {
-    top: 20px;
-    width: 90%;
-  }
-  
-  .footer {
+  .layouts .browser-left, .layouts .browser-right {
+    height: 33%;
+}
+   .aside {
     flex-wrap: wrap;
   }
+  .hidden {
+    margin-left: -200px;
+    top: 20px;
+    width: 400px;
+    p {
+      font-size: 15px;
+      line-height: 23px;
+    }
+  }
   
-}
-@media all and (max-width: 550px) {
   .mobile {
     .mobile-span {
-      width: 100%;
+      width: 80%;
     }
     p {
-      width: 100%;
+      width: 80%;
     }
     ul {
       width: 80%;
-      margin-left: -10px;
     }
   }
-  .hidden {
-    margin-left: -250px;
-  }
 }
-@media all and (max-width: 420px) {
+@media all and (max-width: 525px) {
   .wrapper .logo {
-    margin-right: -1px;
+
   }
   .projects .button{
     margin: 10px 0;
   }
-  .hidden {
-    margin-left: -180px;
+  .layouts .browser-left, .layouts .browser-right {
+    height: 25%;
+}
+ 
+  .projects .button {
+    margin: 10px;
+}
+}
+@media all and (max-width: 435px) {
+  
+  .wrapper-icon .cart {
+    margin-top: -465px;
+    margin-left: 160px;
+}
+  .wrapper-icon input[type="search"] {
+    left: -50px;
+    top: 219px;
+  }
+  .wrapper-icon input[type="search"]:focus {
+    left: -215px;
+    top: 219px;
+    width: 200px;
+  }
+  .control .control-right:after,
+  .control .control-left:after{
+    width: 40px;
+    height: 40px;
+  }
+  
+    .control .control-radio {
+    &:nth-child(2) {
+        left: 28%;
+      }
+
+      &:nth-child(3) {
+        left: 38%;
+      }
+
+      &:nth-child(4) {
+        left: 48%;
+      }
+
+      &:nth-child(5) {
+        left: 58%;
+      }
+
+      &:nth-child(6) {
+        left: 68%;
+      }
+    }
+  
+    .hidden {
+    margin-left: -125px;
+    width: 250px;
+    p {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+  .mobile {
+    padding: 50px 10px;
+  }
+  .projects article img {
+    width: 100%;
+    height: auto;
+  }
+  .posts-wrap img {
+    width: 100%;
+    height: auto;
+  }
+    .layouts .browser-left, .layouts .browser-right {
+    height: 21%;
+}
+}
+@media all and (max-width: 340px) {
+  .projects .article .icon {
+    left: 95px;
   }
 }
+
 
 
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px){
