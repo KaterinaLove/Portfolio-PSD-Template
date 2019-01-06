@@ -1050,9 +1050,6 @@ footer .pseudo {
   .layouts .browser-left {
     margin-left: -530px;
   }
-  .video {
-    height: auto;
-  }
   .mobile {
     padding: 150px 0;
   }
@@ -1104,6 +1101,9 @@ footer .pseudo {
   .layouts .browser-right {
     margin-left: -8%;
   }
+  .video {
+    height: 80%;
+  }
   .mobile {
     background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../img/iphone-in-hand.png);
     background-color: #fbfaf8;
@@ -1131,10 +1131,14 @@ footer .pseudo {
     display: none;
   }
   .third-party {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   .third-party a {
     padding: 30px;
+  }
+  .third-party a img {
+    width: 100%;
+    height: auto;
   }
   .aside {
     display: flex;
@@ -1237,19 +1241,26 @@ footer .pseudo {
     justify-content: center;
     align-items: flex-start;
   }
+  .wrapper .logo {
+    order: 1;
+  }
   .wrapper nav {
-    order: -1;
+    width: 100%;
+    order: 3;
   }
   .wrapper .wrapper-icon {
-    margin-left: 20%;
-    order: 3;
+    order: 2;
   }
   .wrapper-icon .cart {
     padding: 10px;
   }
   .wrapper-icon input[type="search"] {
     left: -60px;
-    top: 15px;
+    top: 11px;
+  }
+  .wrapper-icon input[type="search"]:focus {
+    left: -227px;
+    top: 70px;
   }
   label {
     display: block;
@@ -1258,6 +1269,7 @@ footer .pseudo {
     background-image: url('../img/icon-menu.svg');
     background-size: 100%;
     margin-top: -20px;
+    margin-left: 6%;
   }
   .menu {
     visibility: hidden;
@@ -1267,8 +1279,21 @@ footer .pseudo {
     flex-direction: column;
   }
   .menu li {
-    height: 35px;
-    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+    height: 37px;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+    font-family: 'montserrat-regular', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 0 14px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: capitalize;
+  }
+  .menu li:hover {
+    color: #c7b29a;
+  }
+  .menu li:active {
+    color: #a48d72;
   }
   header {
     padding-bottom: 80px;
@@ -1284,10 +1309,6 @@ footer .pseudo {
   }
   .header p {
     width: 80%;
-  }
-  .wrapper-icon input[type="search"]:focus {
-    left: -300px;
-    top: 90px;
   }
   .control .control-radio:nth-child(2) {
     left: 37%;
@@ -1343,17 +1364,14 @@ footer .pseudo {
   }
 }
 @media all and (max-width: 435px) {
-  .wrapper-icon .cart {
-    margin-top: -465px;
-    margin-left: 160px;
+  .wrapper .wrapper-icon {
+    margin-left: 10%;
   }
   .wrapper-icon input[type="search"] {
-    left: -50px;
-    top: 219px;
+    left: -42px;
   }
   .wrapper-icon input[type="search"]:focus {
-    left: -215px;
-    top: 219px;
+    left: -175px;
     width: 200px;
   }
   .control .control-right:after,
@@ -1399,10 +1417,65 @@ footer .pseudo {
   .layouts .browser-right {
     height: 21%;
   }
+  .third-party a {
+    padding: 10px;
+  }
+  .third-party a img {
+    width: 110%;
+    height: auto;
+  }
 }
 @media all and (max-width: 340px) {
   .projects .article .icon {
     left: 95px;
+  }
+}
+@media all and (max-height: 1259px) {
+  .video {
+    height: 45vh;
+  }
+}
+@media all and (max-height: 1000px) {
+  .video {
+    height: 55vh;
+  }
+}
+@media all and (max-height: 765px) {
+  .video {
+    height: 70vh;
+  }
+}
+@media all and (max-height: 650px) {
+  .hidden {
+    top: 10%;
+  }
+  .video {
+    height: 75vh;
+  }
+}
+@media all and (max-height: 572px) {
+  .video {
+    height: 90vh;
+  }
+}
+@media all and (max-height: 425px) {
+  .hidden {
+    top: 7%;
+  }
+  .hidden span {
+    margin-top: 5px;
+  }
+  .hidden p {
+    line-height: 23px;
+    margin: 5px;
+  }
+}
+@media all and (max-height: 388px) {
+  .hidden {
+    top: 1%;
+  }
+  .hidden span {
+    font-size: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */

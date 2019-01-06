@@ -3,131 +3,168 @@
     min-width: 1583px;
   }
 }
+
 @media all and (max-width: 1439px) {
   body {
     width: 100%;
   }
+
   .wrapper {
     width: 100%;
+
     .logo {
       margin-right: 20px;
     }
   }
+
   .wrapper-icon input[type="search"]:focus {
     left: -250px;
     width: 250px;
   }
+
   .layouts .browser-right {
     margin-left: -250px;
   }
+
   .layouts .browser-left {
     margin-left: -530px;
   }
-  .video {
-    height: auto;
-  }
+
   .mobile {
     padding: 150px 0;
+
     .mobile-span {
       margin-left: 600px;
       width: 500px;
     }
+
     p {
       width: 500px;
       margin-left: 600px;
     }
+
     ul {
       margin-left: 600px;
       width: 500px;
     }
   }
 }
+
 @media all and (max-width: 1195px) {
   .wrapper {
     flex-wrap: wrap;
     justify-content: space-around;
+
     logo {
       order: 1;
     }
+
     nav {
       order: 3;
       margin-top: 30px;
     }
+
     .wrapper-icon {
       order: 2;
       margin-left: 30%;
     }
   }
-  
+
   .wrapper-icon input[type="search"] {
     left: -75px;
   }
+
   .wrapper-icon input[type="search"]:focus {
     left: -305px;
     top: 16px;
   }
+
   .layouts .browser-center,
   .layouts .browser-left,
   .layouts .browser-right {
     width: 50%;
     height: 50%;
   }
+
   .layouts .browser-left {
     margin-left: -40%;
   }
+
   .layouts .browser-right {
     margin-left: -8%;
   }
+
+    .video {
+    height: 80%;
+  }
+  
   .mobile {
     background: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(../img/iphone-in-hand.png);
     background-color: #fbfaf8;
     background-repeat: no-repeat;
     background-position-y: 100%;
     padding-left: 200px;
+
     .mobile-span,
     ul {
       margin: 0 auto;
       padding: 0 10px;
     }
+
     p {
       margin: 25px auto;
       padding: 0 10px;
     }
   }
+
   .resources-spent {
     flex-wrap: wrap;
+
     .inner {
-    padding: 30px 40px;
+      padding: 30px 40px;
     }
   }
+
   .post-inner:last-child {
     visibility: hidden;
     display: none;
   }
+  
+
+  
   .third-party {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     a {
       padding: 30px;
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
+
   .aside {
     display: flex;
     justify-content: center;
     padding: 20px;
+
     .aside-wrup {
       margin: 0 25px 20px 25px;
     }
   }
-  
+
   .footer {
     padding: 50px 0;
+
     article,
     div {
       margin: 10px
     }
   }
 }
+
 @media all and (max-width: 1025px) {
+
   .layouts span,
   .layouts p,
   .text,
@@ -135,295 +172,409 @@
   .projects .projects-span {
     width: 95%;
   }
-  
+
   .layouts .browser-left,
   .layouts .browser-right {
     left: 50%;
     height: 45%;
   }
-  
+
   .mobile {
     padding-left: 300px;
   }
-  
+
   .footer {
     flex-wrap: wrap;
+
     .widget {
       height: 290px;
     }
   }
+
   footer {
     flex-wrap: wrap;
     padding: 20px;
+
     div {
       margin: 10px;
     }
   }
 }
+
 @media all and (max-width: 817px) {
   header {
     padding-bottom: 250px;
   }
-    .control .control-left {
+
+  .control .control-left {
     top: 63%
   }
+
   .control .control-right {
     top: 62%;
   }
+
   .control .control-radio {
     &:nth-child(2) {
-        left: 37%;
-      }
-
-      &:nth-child(3) {
-        left: 42%;
-      }
-
-      &:nth-child(4) {
-        left: 47%;
-      }
-
-      &:nth-child(5) {
-        left: 52%;
-      }
-
-      &:nth-child(6) {
-        left: 57%;
-      }
+      left: 37%;
     }
+
+    &:nth-child(3) {
+      left: 42%;
+    }
+
+    &:nth-child(4) {
+      left: 47%;
+    }
+
+    &:nth-child(5) {
+      left: 52%;
+    }
+
+    &:nth-child(6) {
+      left: 57%;
+    }
+  }
+
   .layouts .browser-left,
   .layouts .browser-right {
     height: 40%;
   }
-  
+
   .mobile {
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/iphone-in-hand.png);
     background-color: #fbfaf8;
     background-repeat: no-repeat;
     background-position-y: 100%;
     padding: 150px 10px;
-    .mobile-span{
+
+    .mobile-span {
       color: #555555;
     }
+
     p {
       color: #666666;
     }
+
     li {
       color: #666666;
     }
- }
+  }
+
   .post-inner:nth-last-child(2) {
     visibility: hidden;
     display: none;
   }
-  
+
 }
+
 @media all and (max-width: 675px) {
-  
-  .wrapper{
+
+  .wrapper {
     justify-content: center;
-    align-items:flex-start;
-    nav {
-    order: -1;
+    align-items: flex-start;
+    
+    .logo {
+      order: 1;
     }
-    .wrapper-icon {
-      margin-left: 20%;
+
+    nav {
+      width: 100%;
       order: 3;
+//      margin-left: 5%;
+    }
+
+    .wrapper-icon {
+      order: 2;
     }
   }
-  
+
   .wrapper-icon {
     .cart {
       padding: 10px;
     }
+
     input[type="search"] {
       left: -60px;
-      top: 15px;
+      top: 11px;
     }
+    input[type="search"]:focus {
+    left: -227px;
+    top: 70px;
   }
-  
+  }
+
   label {
     display: block;
     width: 50px;
     height: 50px;
-    background-image:  url('../img/icon-menu.svg');
+    background-image: url('../img/icon-menu.svg');
     background-size: 100%;
     margin-top: -20px;
+    margin-left: 6%;
   }
-  
+
   .menu {
     visibility: hidden;
     margin: 0 auto;
     height: auto;
     width: 100%;
     flex-direction: column;
+//    margin-left: -5%;
   }
+
   .menu li {
-    height: 35px;
-    background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.0));
-    
+    height: 37px;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+    font-family: 'montserrat-regular', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0 14px;
+  .link();
   }
-  
+
   header {
     padding-bottom: 80px;
   }
+
   .header {
     margin-top: 25px;
+
     .h2 {
       width: 80%;
     }
+
     .h1 {
       width: 80%;
     }
+
     p {
       width: 80%;
     }
   }
 
-  .wrapper-icon input[type="search"]:focus {
-    left: -300px;
-    top: 90px;
-  }
-  
   .control .control-radio {
     &:nth-child(2) {
-        left: 37%;
-      }
-
-      &:nth-child(3) {
-        left: 43%;
-      }
-
-      &:nth-child(4) {
-        left: 49%;
-      }
-
-      &:nth-child(5) {
-        left: 55%;
-      }
-
-      &:nth-child(6) {
-        left: 61%;
-      }
+      left: 37%;
     }
-  
-  .layouts .browser-left, .layouts .browser-right {
+
+    &:nth-child(3) {
+      left: 43%;
+    }
+
+    &:nth-child(4) {
+      left: 49%;
+    }
+
+    &:nth-child(5) {
+      left: 55%;
+    }
+
+    &:nth-child(6) {
+      left: 61%;
+    }
+  }
+
+  .layouts .browser-left,
+  .layouts .browser-right {
     height: 33%;
-}
-   .aside {
+  }
+
+  .aside {
     flex-wrap: wrap;
   }
+
   .hidden {
     margin-left: -200px;
     top: 20px;
     width: 400px;
+
     p {
       font-size: 15px;
       line-height: 23px;
     }
   }
-  
+
   .mobile {
     .mobile-span {
       width: 80%;
     }
+
     p {
       width: 80%;
     }
+
     ul {
       width: 80%;
     }
   }
 }
-@media all and (max-width: 525px) {
-  .wrapper .logo {
 
-  }
-  .projects .button{
+@media all and (max-width: 525px) {
+//  .wrapper {
+//    .logo {
+//    margin-right: 10%;
+//      margin-left: 10%;
+//    }
+//    .wrapper-icon {
+//      margin-left: 10%;
+//    }
+//  }
+
+  .projects .button {
     margin: 10px 0;
   }
-  .layouts .browser-left, .layouts .browser-right {
+
+  .layouts .browser-left,
+  .layouts .browser-right {
     height: 25%;
-}
- 
+  }
+
   .projects .button {
     margin: 10px;
+  }
 }
-}
+
 @media all and (max-width: 435px) {
   
-  .wrapper-icon .cart {
-    margin-top: -465px;
-    margin-left: 160px;
-}
-  .wrapper-icon input[type="search"] {
-    left: -50px;
-    top: 219px;
+.wrapper .wrapper-icon {
+    margin-left: 10%;
   }
+
+  .wrapper-icon input[type="search"] {
+    left: -42px;
+  }
+
   .wrapper-icon input[type="search"]:focus {
-    left: -215px;
-    top: 219px;
+        left: -175px;
     width: 200px;
   }
+
   .control .control-right:after,
-  .control .control-left:after{
+  .control .control-left:after {
     width: 40px;
     height: 40px;
   }
-  
-    .control .control-radio {
+
+  .control .control-radio {
     &:nth-child(2) {
-        left: 28%;
-      }
-
-      &:nth-child(3) {
-        left: 38%;
-      }
-
-      &:nth-child(4) {
-        left: 48%;
-      }
-
-      &:nth-child(5) {
-        left: 58%;
-      }
-
-      &:nth-child(6) {
-        left: 68%;
-      }
+      left: 28%;
     }
-  
-    .hidden {
+
+    &:nth-child(3) {
+      left: 38%;
+    }
+
+    &:nth-child(4) {
+      left: 48%;
+    }
+
+    &:nth-child(5) {
+      left: 58%;
+    }
+
+    &:nth-child(6) {
+      left: 68%;
+    }
+  }
+
+  .hidden {
     margin-left: -125px;
     width: 250px;
+
     p {
       font-size: 14px;
       line-height: 22px;
     }
   }
+
   .mobile {
     padding: 50px 10px;
   }
+
   .projects article img {
     width: 100%;
     height: auto;
   }
+
   .posts-wrap img {
     width: 100%;
     height: auto;
   }
-    .layouts .browser-left, .layouts .browser-right {
+
+  .layouts .browser-left,
+  .layouts .browser-right {
     height: 21%;
+  }
+  
+  .third-party {
+    a {
+      padding: 10px;
+      img {
+        width: 110%;
+        height: auto;
+      }
+    }
+  }
 }
-}
+
 @media all and (max-width: 340px) {
   .projects .article .icon {
     left: 95px;
   }
+    
 }
 
 
-
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px){
-
+@media all and (max-height: 1259px) {
+  .video {
+    height: 45vh;
+  }
 }
+
+@media all and (max-height: 1000px) {
+  .video {
+    height: 55vh;
+  }
+}
+@media all and (max-height: 765px) {
+  .video {
+    height: 70vh;
+  }
+}
+@media all and (max-height: 650px) {
+  .hidden {
+    top: 10%;
+  }
+  .video {
+    height: 75vh;
+  }
+}
+@media all and(max-height: 572px) {
+  .video {
+    height: 90vh;
+  }
+}
+
+@media all and (max-height: 425px) {
+  .hidden {
+    top: 7%;
+    span {
+      margin-top: 5px;
+    }
+    p {
+      line-height: 23px;
+      margin: 5px;
+    }
+  }
+}
+@media all and (max-height: 388px) {
+  .hidden {
+    top: 1%;
+    span {
+      font-size: 25px;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) {}
