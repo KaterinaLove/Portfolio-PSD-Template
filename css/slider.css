@@ -1,0 +1,143 @@
+.control .control-left {
+  position: absolute;
+  top: 46.4%;
+  left: 7.8%;
+}
+.control .control-left:after {
+  content: "";
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  border-bottom: 2px solid #a4a3a1;
+  border-left: 2px solid #a4a3a1;
+  transform: rotate(45deg);
+}
+.control .control-left:hover:after {
+  border-bottom: 2px solid #d3c1ad;
+  border-left: 2px solid #d3c1ad;
+}
+.control .control-radio {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+}
+.control .control-radio:after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #a4a3a1;
+  background-clip: padding-box;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+}
+.control .control-radio:hover:after {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #a4a3a1;
+  border-radius: 50%;
+}
+.control .control-radio:nth-child(2) {
+  left: -30px;
+}
+.control .control-radio:nth-child(3) {
+  left: 35%;
+}
+.control .control-radio:nth-child(4) {
+  left: 50%;
+}
+.control .control-radio:nth-child(5) {
+  left: 15px;
+}
+.control .control-radio:nth-child(6) {
+  left: 30px;
+}
+.control .control-right {
+  position: absolute;
+  top: 46.4%;
+  left: 90.1%;
+}
+.control .control-right:after {
+  content: "";
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  border-top: 2px solid #a4a3a1;
+  border-right: 2px solid #a4a3a1;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 10px;
+  left: -25px;
+}
+.control .control-right:hover:after {
+  border-top: 2px solid #d3c1ad;
+  border-right: 2px solid #d3c1ad;
+}
+.slaiders {
+  height: 100%;
+  width: 100%;
+}
+.slider {
+  height: 100%;
+  width: 100%;
+}
+#s1 {
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  background: -ms-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../img/header.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#s2 {
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  background: -ms-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../img/header.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#s3 {
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  background: -ms-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../img/header.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#s4 {
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  background: -ms-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../img/header.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#s5 {
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  background: -ms-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../img/header.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=slider.css.map */
