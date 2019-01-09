@@ -12,7 +12,7 @@ var slide1 = document.getElementById("s1"),
   controlRight = document.getElementById("controlRight");
 
 function start() {
-  control1.focus();
+  this.control1;
   slide1.style.zIndex = "-1";
   slide2.style.zIndex = "-2";
   slide3.style.zIndex = "-2";
@@ -27,35 +27,35 @@ controlRight.onclick = function () {
     slide3.style.zIndex = "-2";
     slide4.style.zIndex = "-2";
     slide5.style.zIndex = "-2";
-    control2.focus();
+    this.control2;
   } else if (slide2.style.zIndex == "-1") {
     slide1.style.zIndex = "-2";
     slide2.style.zIndex = "-2";
     slide3.style.zIndex = "-1";
     slide4.style.zIndex = "-2";
     slide5.style.zIndex = "-2";
-    control3.focus();
+    this.control3;
   } else if (slide3.style.zIndex == "-1") {
     slide1.style.zIndex = "-2";
     slide2.style.zIndex = "-2";
     slide3.style.zIndex = "-2";
     slide4.style.zIndex = "-1";
     slide5.style.zIndex = "-2";
-    control4.focus();
+    this.control4;
   } else if (slide4.style.zIndex == "-1") {
     slide1.style.zIndex = "-2";
     slide2.style.zIndex = "-2";
     slide3.style.zIndex = "-2";
     slide4.style.zIndex = "-2";
     slide5.style.zIndex = "-1";
-    control5.focus();
+    this.control5;
   } else if (slide5.style.zIndex == "-1") {
     slide1.style.zIndex = "-1";
     slide2.style.zIndex = "-2";
     slide3.style.zIndex = "-2";
     slide4.style.zIndex = "-2";
     slide5.style.zIndex = "-2";
-    control1.focus();
+    this.control1;
   }
 }
 
@@ -66,35 +66,35 @@ controlLeft.onclick = function () {
     slide3.style.zIndex = "-2";
     slide4.style.zIndex = "-2";
     slide5.style.zIndex = "-1";
-    control5.focus();
+    this.control5;
   } else if (slide2.style.zIndex == "-1") {
     slide1.style.zIndex = "-1";
     slide2.style.zIndex = "-2";
     slide3.style.zIndex = "-2";
     slide4.style.zIndex = "-2";
     slide5.style.zIndex = "-2";
-    control1.focus();
+    this.control1;
   } else if (slide3.style.zIndex == "-1") {
     slide1.style.zIndex = "-2";
     slide2.style.zIndex = "-1";
     slide3.style.zIndex = "-2";
     slide4.style.zIndex = "-2";
     slide5.style.zIndex = "-2";
-    control2.focus();
+    this.control2;
   } else if (slide4.style.zIndex == "-1") {
     slide1.style.zIndex = "-2";
     slide2.style.zIndex = "-2";
     slide3.style.zIndex = "-1";
     slide4.style.zIndex = "-2";
     slide5.style.zIndex = "-2";
-    control3.focus();
+    this.control3;
   } else if (slide5.style.zIndex == "-1") {
     slide1.style.zIndex = "-2";
     slide2.style.zIndex = "-2";
     slide3.style.zIndex = "-2";
     slide4.style.zIndex = "-1";
     slide5.style.zIndex = "-2";
-    control4.focus();
+    this.control4;
   }
 }
 
@@ -141,34 +141,34 @@ var timerId = setInterval(function () {
     slide3.style.zIndex = "-2";
     slide4.style.zIndex = "-2";
     slide5.style.zIndex = "-2";
-    control2.focus();
+    this.control2;
   } else if (slide2.style.zIndex == "-1") {
     slide1.style.zIndex = "-2";
     slide2.style.zIndex = "-2";
     slide3.style.zIndex = "-1";
     slide4.style.zIndex = "-2";
     slide5.style.zIndex = "-2";
-    control3.focus();
+    this.control3;
   } else if (slide3.style.zIndex == "-1") {
     slide1.style.zIndex = "-2";
     slide2.style.zIndex = "-2";
     slide3.style.zIndex = "-2";
     slide4.style.zIndex = "-1";
     slide5.style.zIndex = "-2";
-    control4.focus();
+    this.control4;
   } else if (slide4.style.zIndex == "-1") {
     slide1.style.zIndex = "-2";
     slide2.style.zIndex = "-2";
     slide3.style.zIndex = "-2";
     slide4.style.zIndex = "-2";
     slide5.style.zIndex = "-1";
-    control5.focus();
+    this.control5;
   } else if (slide5.style.zIndex == "-1") {
     slide1.style.zIndex = "-1";
     slide2.style.zIndex = "-2";
     slide3.style.zIndex = "-2";
     slide4.style.zIndex = "-2";
     slide5.style.zIndex = "-2";
-    control1.focus();
+    this.control1;
   }
 }, 5000);
