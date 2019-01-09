@@ -10,8 +10,13 @@ var slide1 = document.getElementById("s1"),
     control5 = document.getElementById("control5");
 
 //var timerId = setInterval(function() {
-//  console.log( "тик" );
+//}
 //}, 2000);
+
+var control = 'control';
+var slide = 'slide';
+console.log(control);
+
 
 control1.onfocus = function() {
   slide1.style.zIndex = "-1";
