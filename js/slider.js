@@ -11,6 +11,8 @@ var slide1 = document.getElementById("s1"),
   controlLeft = document.getElementById("controlLeft"),
   controlRight = document.getElementById("controlRight");
 
+
+
 controlRight.onclick = function () {
   if (slide1.style.zIndex == "-1") {
     slide1.style.zIndex = "-2";
@@ -18,30 +20,35 @@ controlRight.onclick = function () {
     slide3.style.zIndex = "-2";
     slide4.style.zIndex = "-2";
     slide5.style.zIndex = "-2";
+    control2.focus();
   } else if (slide2.style.zIndex == "-1") {
     slide1.style.zIndex = "-2";
     slide2.style.zIndex = "-2";
     slide3.style.zIndex = "-1";
     slide4.style.zIndex = "-2";
     slide5.style.zIndex = "-2";
+    control3.focus();
   } else if (slide3.style.zIndex == "-1") {
     slide1.style.zIndex = "-2";
     slide2.style.zIndex = "-2";
     slide3.style.zIndex = "-2";
     slide4.style.zIndex = "-1";
     slide5.style.zIndex = "-2";
+    control4.focus();
   } else if (slide4.style.zIndex == "-1") {
     slide1.style.zIndex = "-2";
     slide2.style.zIndex = "-2";
     slide3.style.zIndex = "-2";
     slide4.style.zIndex = "-2";
     slide5.style.zIndex = "-1";
+    control5.focus();
   } else if (slide5.style.zIndex == "-1") {
     slide1.style.zIndex = "-1";
     slide2.style.zIndex = "-2";
     slide3.style.zIndex = "-2";
     slide4.style.zIndex = "-2";
     slide5.style.zIndex = "-2";
+    control1.focus();
   }
 }
 
@@ -52,30 +59,35 @@ controlLeft.onclick = function () {
     slide3.style.zIndex = "-2";
     slide4.style.zIndex = "-2";
     slide5.style.zIndex = "-1";
+    control5.focus();
   } else if (slide2.style.zIndex == "-1") {
     slide1.style.zIndex = "-1";
     slide2.style.zIndex = "-2";
     slide3.style.zIndex = "-2";
     slide4.style.zIndex = "-2";
     slide5.style.zIndex = "-2";
+    control1.focus();
   } else if (slide3.style.zIndex == "-1") {
     slide1.style.zIndex = "-2";
     slide2.style.zIndex = "-1";
     slide3.style.zIndex = "-2";
     slide4.style.zIndex = "-2";
     slide5.style.zIndex = "-2";
+    control2.focus();
   } else if (slide4.style.zIndex == "-1") {
     slide1.style.zIndex = "-2";
     slide2.style.zIndex = "-2";
     slide3.style.zIndex = "-1";
     slide4.style.zIndex = "-2";
     slide5.style.zIndex = "-2";
+    control3.focus();
   } else if (slide5.style.zIndex == "-1") {
     slide1.style.zIndex = "-2";
     slide2.style.zIndex = "-2";
     slide3.style.zIndex = "-2";
     slide4.style.zIndex = "-1";
     slide5.style.zIndex = "-2";
+    control4.focus();
   }
 }
 
