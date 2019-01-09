@@ -9,22 +9,43 @@ var slide1 = document.getElementById("s1"),
     control4 = document.getElementById("control4"),
     control5 = document.getElementById("control5");
 
+//var timerId = setInterval(function() {
+//  console.log( "тик" );
+//}, 2000);
+
 control1.onfocus = function() {
-//  if ()
-  control1.focus();
   slide1.style.zIndex = "-1";
-  
+  slide2.style.zIndex = "-2";
+  slide3.style.zIndex = "-2";
+  slide4.style.zIndex = "-2";
+  slide5.style.zIndex = "-2";
 }
 control2.onfocus = function() {
+  slide1.style.zIndex = "-2";
   slide2.style.zIndex = "-1";
+  slide3.style.zIndex = "-2";
+  slide4.style.zIndex = "-2";
+  slide5.style.zIndex = "-2";
 }
 control3.onfocus = function() {
+  slide1.style.zIndex = "-2";
+  slide2.style.zIndex = "-2";
   slide3.style.zIndex = "-1";
+  slide4.style.zIndex = "-2";
+  slide5.style.zIndex = "-2";
 }
 control4.onfocus = function() {
+  slide1.style.zIndex = "-2";
+  slide2.style.zIndex = "-2";
+  slide3.style.zIndex = "-2";
   slide4.style.zIndex = "-1";
+  slide5.style.zIndex = "-2";
 }
 control5.onfocus = function() {
+  slide1.style.zIndex = "-2";
+  slide2.style.zIndex = "-2";
+  slide3.style.zIndex = "-2";
+  slide4.style.zIndex = "-2";
   slide5.style.zIndex = "-1";
 }
 
