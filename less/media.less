@@ -281,7 +281,6 @@
     nav {
       width: 100%;
       order: 3;
-//      margin-left: 5%;
     }
 
     .wrapper-icon {
@@ -320,11 +319,11 @@
     height: auto;
     width: 100%;
     flex-direction: column;
-//    margin-left: -5%;
   }
 
   .menu li {
-    height: 37px;
+    transition: height 2s ease;
+    height: 0px;
     background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
     font-family: 'montserrat-regular', sans-serif;
   font-size: 14px;
@@ -332,6 +331,10 @@
   padding: 0 14px;
   .link();
   }
+  
+  input[type="checkbox"]:checked ~ .menu li {
+  height: 37px;
+}
 
   header {
     padding-bottom: 80px;

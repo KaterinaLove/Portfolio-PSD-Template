@@ -1356,7 +1356,8 @@ footer .pseudo {
     flex-direction: column;
   }
   .menu li {
-    height: 37px;
+    transition: height 2s ease;
+    height: 0px;
     background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
     font-family: 'montserrat-regular', sans-serif;
     font-size: 14px;
@@ -1371,6 +1372,9 @@ footer .pseudo {
   }
   .menu li:active {
     color: #a48d72;
+  }
+  input[type="checkbox"]:checked ~ .menu li {
+    height: 37px;
   }
   header {
     padding-bottom: 80px;
