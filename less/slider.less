@@ -105,12 +105,17 @@
   }
 }
 
-#s1 {
+.slide {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
+  z-index: -1;
+  transition: opacity 4s ease;
+}
+
+#s1 {
   background: -webkit-linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65));
   background: -moz-linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65));
   background: -o-linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65));
@@ -119,15 +124,10 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -2;
+  opacity: 0;
 }
 
 #s2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
   background: -webkit-linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65));
   background: -moz-linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65));
   background: -o-linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65));
@@ -136,15 +136,10 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -2;
+  opacity: 0;
 }
 
 #s3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
   background: -webkit-linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65));
   background: -moz-linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65));
   background: -o-linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65));
@@ -153,15 +148,10 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -2;
+  opacity: 0;
 }
 
 #s4 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
   background: -webkit-linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65));
   background: -moz-linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65));
   background: -o-linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65));
@@ -170,15 +160,10 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -2;
+  opacity: 0;
 }
 
 #s5 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
   background: -webkit-linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65));
   background: -moz-linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65));
   background: -o-linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65));
@@ -187,5 +172,5 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -2;
+  opacity: 0;
 }
